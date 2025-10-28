@@ -170,7 +170,7 @@ div.news p.date{
 summary::-webkit-details-marker{display:none}
 details[open] summary.summary-hidden{display:none}
 
-span.fot, p.fot>span, div.fot>div, .fot>span, p.fot>img,			p.fot>object{display:inline-block;margin:0 5 30px 30px;padding:10px;border:1px solid #ccc;box-shadow:#ccc 0 0 7px;font-style:oblique;font-weight:normal;text-align:center;line-height:1.4;vertical-align:top;overflow-wrap:anywhere;background:#fff;font-size:12px}
+span.fot, p.fot>span, div.fot>div, .fot>span, p.fot>img,			p.fot>object{display:inline-block;margin:0 0 30px 30px;padding:10px;border:1px solid #ccc;box-shadow:#ccc 0 0 7px;font-style:oblique;font-weight:normal;text-align:center;line-height:1.4;vertical-align:top;overflow-wrap:anywhere;background:#fff;font-size:12px}
 div.fot>div{max-width:634px;font-style:normal;text-align:left}
 p.fot, div.fot, picture.fot{width:auto;margin:30px auto 30px -30px;text-align:center}
 p.fot.v img,p.fot span.v img,p.fot img.v{height:500px}
@@ -182,23 +182,23 @@ span.fot img,p.fot span img{display:block;margin-right:auto;margin-left:auto}
 .fot iframe{display:block;222width:309px;border:0}
 /*.fot iframe.w{222width:439px}*/
 .fot *.t,.fot.t img,.fot.t iframe{margin-bottom:8px}
-p.fit{padding:10px 0;222text-align:left}
+p.fit{padding:20px 0;222text-align:left}
 h1+p.fit{margin-top:0}
-h2+p.fot{margin-top:20px}
+h2+p.fot{margin-top:-15px}
 #b2d+p.fit{display:table-cell;	22222padding:20px 0;2222222text-align:left}
 p.fit span{max-width:900px;		777margin:0; 222margin-bottom:0}
 #b2d+p.fit span{margin-bottom:0}
 /*
 p.fit.vid span{width:636px;height:510px}
 */
-#b2d+p.fit span{2222max-width:900px;margin-left:0;margin-right:10%}
+#b2d+p.fit span{2222max-width:900px;margin-left:0;margin-right:-10%}
 .fit img{width:100%;height:auto}
 /*
 .fit iframe{width:100%;height:100%}
 .fit iframe{width:634px;height:510px}
 .fot iframe.w{width:636px;height:361px}
 */
-.fit iframe{width:622px;height:476px}      
+.fit iframe{width:634px;height:476px}
 .fit.xs iframe{width:400px;height:293px}
 .fit.xs iframe.w{height:223px}
 .fot iframe.w{height:357px}
@@ -1059,67 +1059,3 @@ img.illX {
 #a102d img {
 	vertical-align:		middle;
 }
-
-.fot {
-    margin:20px 20px 20px 20px;
-    display: block;
-}
-
-
-.fit iframe {
-  max-width: 100%;
-  height: auto;
-  aspect-ratio: 16/9;
-}
-
-/* Мобильная адаптация для iPhone */
-@media screen and (max-width: 768px) {
-  .fit iframe, .fot iframe.w {
-    width: 100% !important;
-    height: auto !important;
-    min-height: 200px;
-    aspect-ratio: 16/9;
-  }
-  
-  p.fit, div.fot, picture.fot {
-    margin-left: 0;
-    margin-right: 0;
-  }
-  
-  p.fit span, .fot > span {
-    max-width: 100% !important;
-    margin: 0 !important;
-    padding: 10px;
-  }
-  
-  #b2d+p.fit span {
-    margin-right: 0 !important;
-  }
-  
-  .fot img, .fot object, .fot iframe {
-    height: auto;
-    max-width: 100%;
-  }
-  
-  p.fot.fit.t span {
-    display: block;
-    width: 100%;
-    margin: 0;
-    padding: 10px 0;
-  }
-}
-.fot > span, 
-p.fot > span, 
-div.fot > div {
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    hyphens: auto;
-    max-width: 50%;
-}
-/* Увеличение конкретного изображения */
-img.large-img {
-    width: auto;
-    max-width: 100%;
-    height: auto 
-}
-
